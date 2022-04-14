@@ -1,0 +1,31 @@
+---
+layout: none
+---
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/collection/jaraid.json",
+  "@type": "sc:Collection",
+  "label": "jaraid",
+  "manifests": [
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/1/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "1"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/1709/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "1709"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/2/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "2"
+    },
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/985/manifest.json",
+      "@type": "sc:Manifest",
+      "label": "985"
+    }
+  ]
+}

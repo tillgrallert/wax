@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  jekyll:
+    environment:
+      - JEKYLL_ENV=docker
+    command: jekyll serve --config  _config.yml, _config.docker.yml
+    image: jekyll/jekyll:4.1.0 # loading this image from Docker Hub
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - 4000:4000
+    container_name: wax # random name?

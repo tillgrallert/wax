@@ -18,9 +18,9 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-title:            'Wax'
+title:            'Jarāʾid'
 description:      'Minimal Exhibitions with Jekyll'
-url:              'https://minicomp.github.io'
+url:              #'https://minicomp.github.io'
 baseurl:          '/wax'
 copyright:        'Example copyright org, 2019'
 logo:             '/assets/logo.png'
@@ -65,13 +65,13 @@ kramdown:
 collections:
   exhibits:
     output: true
-  qatar: # name of collection
-    output: true # makes sure pages are output as html files
-    layout: 'qatar_item' # the layout for the pages to use
+  jaraid:
+    output: true
+    layout: "jaraid_item"
     metadata:
-      source: 'qatar.csv' # path to the metadata file within `_data`
+      source: "jaraid.yml"
     images:
-      source: 'raw_images/qatar' # path to the directory of images within `_data`
+      source: "raw_images/jaraid"
 
 # --------------------------------------------------------------
 # SEARCH INDEX SETTINGS
@@ -85,15 +85,16 @@ search:
   main:
     index: '/search/index.json' # file the index will get written to
     collections:
-      qatar:
-        content: false # whether or not to index page content
-        fields: # the metadata fields to index
-          - artist
-          - location
+      jaraid:
+        content: true
+        fields:
           - label
-          - _date
-          - object_type
-          - current_location
+          - titles
+          - title
+          - editor
+          - issued
+          - place
+          - lang
 
 # --------------------------------------------------------------
 # SITE MENU SETTINGS
@@ -132,11 +133,11 @@ menu:
 footer:
   links:
     - label: 'GitHub'
-      link: 'https://github.com/minicomp/wax'
+      link: #'https://github.com/minicomp/wax'
     - label: 'Credits'
       link: '/credits'
     - label: 'Contact'
-      link: 'https://gitter.im/minicomp/wax/'
+      link: #'https://gitter.im/minicomp/wax/'
   logos:
     - img: '/img/logo.png'
 

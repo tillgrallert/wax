@@ -1,0 +1,51 @@
+---
+- pid: 1
+  label: لسان العرب
+  titles:
+  - title: Lisān al-ʿArab
+    lang: ar-Latn-x-ijmes
+  - title: لسان العرب
+    lang: ar
+  lang:
+  - mainLang: ar
+  editor:
+  - name: عبد الغني أفندي العريسي
+    VIAF: https://viaf.org/37216757
+    oape: '459'
+  - name: فؤاد حنتس
+    oape: '4162'
+  issued: '1912-09-23'
+  place:
+  - name: Beirut
+    GeoNames: https://geonames.org/276781
+  ids:
+  - jaraid: t1r2408
+  - oape: '3460'
+  order: '0'
+  layout: jaraid_item
+  collection: jaraid
+- pid: 2
+  label: كوكب المشرق
+  title:
+  - title: Kawkab al-Mashriq
+    lang: ar-Latn-x-ijmes
+  - title: L'Astre d'Orient
+    lang: fr
+  - title: كوكب المشرق
+    lang: ar
+  lang:
+  - mainLang: ar
+  - otherLangs: fr
+  editor:
+  - name: ʿAbd Allāh Marrāsh
+    oape: '6261'
+  issued: '1882-06-01'
+  place:
+  - name: Paris
+    GeoNames: https://geonames.org/2988507
+  ids:
+  - jaraid: t1r208
+  - oape: '716'
+  order: '1'
+  layout: jaraid_item
+  collection: jaraid
