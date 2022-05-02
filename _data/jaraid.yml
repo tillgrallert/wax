@@ -26,7 +26,7 @@
   collection: jaraid
 - pid: 2
   label: كوكب المشرق
-  title:
+  titles:
   - title: Kawkab al-Mashriq
     lang: ar-Latn-x-ijmes
   - title: L'Astre d'Orient
