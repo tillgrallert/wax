@@ -2,6 +2,8 @@
 layout: generic_collection_item
 image_viewer: 'openseadragon'
 pagination: true
+# the following aims to assign new keys to existing metadata 
+# problems: I cannot access nested data from the page's metadata
 meta:
   - label: 'Label'
     value: page.label
@@ -13,13 +15,24 @@ meta:
     value: page.titles.title
   - label: 'Title: no Path with index'
     value: page.title[0]
+  - label: 'Title: Path with index'
+    value: page.titles.title[1]
   - label: 'Title: Path with `|`'
     value: page.titles|title
   - label: 'Title: Path with `.`'
     value: page.titles.title
   - label: 'Title: no Path with selector'
-    value: page.title[lang="ar"]
+    value: page.title[lang=page.lang.mainLang]
   - label: 'IIIF Manifest'
     value: page.manifest
     type:  link
+  - label: 'Herausgeber'
+    value: page.issued[0]
+  - label: "Alex' suggestion"
+    # this is printed verbatim
+    value: site.data["jaraid"][pid[0]].label
+  - label: 'test for page.pid'
+    value: page.pid
+  - label: 'test for site.data'
+    value: site.data.jaraid.periodicals
 ---

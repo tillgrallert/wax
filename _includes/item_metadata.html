@@ -27,5 +27,12 @@
         <dt>{{ item.label }}</dt>
         <dd>{{ value | strip }}</dd>
     {% endif %}
+    {% comment %}
+  test: output the meta data to website
+{% endcomment %}
+<span>{{ item | strip }}</span>
+<span>{{ item.value }}</span>
   {% endfor %}
+}
+}
 </dl>
